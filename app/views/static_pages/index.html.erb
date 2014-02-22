@@ -1,0 +1,90 @@
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/assets/raphael-min.js" type="text/javascript"></script>
+<script src="/assets/jquery.usmap.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#map').usmap({
+    	stateStyles: {fill: 'blue'},
+		stateHoverStyles: {fill: 'red'},
+		stateHoverAnimation: 300, 
+		showLabels: true,
+		labelWidth: 20,
+		labelHeight: 20,
+		stateSpecificStyles: {
+		    'TX': {fill: 'red'},
+			'GA': {fill: 'teal'},
+			'CA': {fill: 'teal'},
+			'FL': {fill: 'pink'},
+			'MI': {fill: 'pink'},
+			'NC': {fill: 'pink'},
+			'OH': {fill: 'pink'},
+			'IL': {fill: 'pink'},
+			'VA': {fill: 'pink'},
+			'NY': {fill: 'pink'},
+			'PA': {fill: 'navajowhite'},
+			'NJ': {fill: 'navajowhite'},
+			'AL': {fill: 'navajowhite'},
+			'SC': {fill: 'navajowhite'},
+			'KY': {fill: 'navajowhite'},
+			'MO': {fill: 'navajowhite'},
+			'TN': {fill: 'navajowhite'},
+			'IN': {fill: 'navajowhite'},
+			'AR': {fill: 'navajowhite'},
+			'MS': {fill: 'navajowhite'},
+			'LA': {fill: 'navajowhite'},
+			'ON': {fill: 'navajowhite'},
+			'OK': {fill: 'purple'},
+			'WA': {fill: 'purple'},
+			'MD': {fill: 'purple'},
+			'AZ': {fill: 'purple'},
+			'WI': {fill: 'purple'},
+			'MN': {fill: 'purple'},
+			'AB': {fill: 'purple'},
+			'CO': {fill: 'purple'},
+			'MA': {fill: 'purple'},
+			'KS': {fill: 'purple'},
+			'UT': {fill: 'purple'},
+			'CT': {fill: 'brown'},
+			'IA': {fill: 'brown'},
+			'NV': {fill: 'brown'},
+			'NE': {fill: 'brown'},
+			'OR': {fill: 'brown'},
+			'WV': {fill: 'brown'},
+			'SK': {fill: 'brown'},
+			'NM': {fill: 'brown'},
+			'ID': {fill: 'brown'},
+			'RI': {fill: 'brown'},
+			'DE': {fill: 'brown'},
+			'MT': {fill: 'brown'},
+			'DC': {fill: 'brown'},
+			'SD': {fill: 'brown'},
+			'MB': {fill: 'brown'},
+			'HI': {fill: 'brown'},
+			'WY': {fill: 'brown'},
+			'ND': {fill: 'brown'},
+			'NH': {fill: 'brown'},
+			'AK': {fill: 'brown'},
+			'ME': {fill: 'brown'},
+	  }, 
+    });
+	$('#map').on('usmapmouseover', function(event, data) {
+	  // Output the abbreviation of the state name to the console
+	  console.log(data.name);
+	});
+});
+</script>
+
+<body>
+	<div id="map" style="width: 600px; height: 600px;"></div>
+	<div id="legend" style="width: 200px; height: 200px">
+		<div class="legend-icon" id="first"></div>100,000+<br>
+		<div class="legend-icon" id="second"></div>80,000-100,000<br>
+		<div class="legend-icon" id="third"></div>60,000-80,000<br>
+		<div class="legend-icon" id="fourth"></div>40,000-60,000<br>
+		<div class="legend-icon" id="fifth"></div>20,000-40,000<br>
+		<div class="legend-icon" id="sixth"></div>10,000-20,000<br>
+		<div class="legend-icon" id="seventh"></div>5,000-10,000<br>
+		<div class="legend-icon" id="eighth"></div>0-5,000<br>
+	</div>
+</body>

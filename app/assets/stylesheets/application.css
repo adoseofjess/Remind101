@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#map {
+	display: inline-block;
+	float: left;
+}
+
+#legend {
+	display: inline-block;
+	float: right;
+	border: solid black 1px;
+}
+
+.legend-icon {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+}
+
+#first {
+	background-color: red;
+	border: solid red 1px;
+}
+
+#second {
+	background-color: yellow;
+	border: solid yellow 1px;
+}
+
+#third {
+	background-color: blue;
+	border: solid blue 1px;
+}
+
+#fourth {
+	background-color: teal;
+	border: solid teal 1px;
+}
+
+#fifth {
+	background-color: pink;
+	border: solid pink 1px;
+}
+
+#sixth {
+	background-color: navajowhite;
+	border: solid navajowhite 1px;
+}
+
+#seventh {
+	background-color: purple;
+	border: solid purple 1px;
+}
+
+#eighth {
+	background-color: brown;
+	border: solid brown 1px;
+}
